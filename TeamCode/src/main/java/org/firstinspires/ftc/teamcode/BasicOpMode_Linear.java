@@ -82,18 +82,33 @@ public class BasicOpMode_Linear extends LinearOpMode {
 
             leftDrive.setPower(0.25);
             rightDrive.setPower(0.25);
-
+            //move forward 4 feet
             sleep(4000);
 
             leftDrive.setPower(0.25);
             rightDrive.setPower(-0.25);
-
+            // turn left for 2.25 seconds
             sleep(2250);
-            // wait for 1 seconds.
+
             leftDrive.setPower(0.25);
             rightDrive.setPower(0.25);
-
+            // go forward for 4 seconds
             sleep(4000);
+
+            leftDrive.setPower(0.25);
+            rightDrive.setPower(-0.25);
+            // turn left for 2.25 seconds
+            sleep(2250);
+
+            leftDrive.setPower(0.25);
+            rightDrive.setPower(0.25);
+            // move forward for 4 seconds
+            sleep(4000);
+
+
+
+
+
 
             telemetry.addData("Status", "Run Time: " + runtime.toString());
             //telemetry.addData("Motors", "left (%.2f), right (%.2f)", leftDrive, rightDrive);
