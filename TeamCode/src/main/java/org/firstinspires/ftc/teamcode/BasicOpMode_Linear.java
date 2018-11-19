@@ -87,8 +87,8 @@ public class BasicOpMode_Linear extends LinearOpMode {
 
             leftDrive.setPower(0.25);
             rightDrive.setPower(-0.25);
-            // turn left for 2.25 seconds
-            sleep(2250);
+            // turn left for 1 seconds
+            sleep(1500);
 
             leftDrive.setPower(0.25);
             rightDrive.setPower(0.25);
@@ -97,13 +97,13 @@ public class BasicOpMode_Linear extends LinearOpMode {
 
             leftDrive.setPower(0.25);
             rightDrive.setPower(-0.25);
-            // turn left for 2.25 seconds
-            sleep(2250);
+            // turn left for 2.5 seconds
+            sleep(2500);
 
-            leftDrive.setPower(0.25);
-            rightDrive.setPower(0.25);
-            // move forward for 4 seconds
-            sleep(4000);
+            leftDrive.setPower(1);
+            rightDrive.setPower(1);
+            // move forward for 2 seconds
+            sleep(2000);
 
 
 
@@ -116,6 +116,3 @@ public class BasicOpMode_Linear extends LinearOpMode {
         //}
     }
 }
-
-// comment from sid
-// comment from ansh
