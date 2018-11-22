@@ -82,32 +82,48 @@ public class BasicOpMode_Linear extends LinearOpMode {
 
             leftDrive.setPower(0.25);
             rightDrive.setPower(0.25);
-            //move forward 4 feet
-            sleep(4000);
+            //move forward and touch gold mineral
+            sleep(2250);
+
+            leftDrive.setPower(-0.25);
+            rightDrive.setPower(-0.25);
+            //move backward for 1 seconds
+            sleep( 1250);
 
             leftDrive.setPower(0.25);
             rightDrive.setPower(-0.25);
-            // turn left for 1 seconds
-            sleep(1500);
+            //turn left
+            sleep( 2750);
 
             leftDrive.setPower(0.25);
             rightDrive.setPower(0.25);
-            // go forward for 4 seconds
-            sleep(4000);
+            //go forward
+            sleep( 2750);
 
             leftDrive.setPower(0.25);
             rightDrive.setPower(-0.25);
-            // turn left for 2.5 seconds
-            sleep(2500);
+            //turn left
+            sleep( 750);
+
+            leftDrive.setPower(0.25);
+            rightDrive.setPower(0.25);
+            //go forward
+            sleep( 3500);
+
+            leftDrive.setPower(0);
+            rightDrive.setPower(0);
+            //stop and drop team marker in depot
+            sleep( 2000);
+
+            leftDrive.setPower(0.25);
+            rightDrive.setPower(-0.25);
+            //u-turn from left
+            sleep( 3750);
 
             leftDrive.setPower(1);
             rightDrive.setPower(1);
-            // move forward for 2 seconds
-            sleep(2000);
-
-
-
-
+            //go forward to park in crater
+            sleep( 3500);
 
 
             telemetry.addData("Status", "Run Time: " + runtime.toString());
